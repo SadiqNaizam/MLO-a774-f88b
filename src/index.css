@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 210 17% 98%; /* #F8F9FA */
+    --foreground: 222.2 84% 4.9%; /* Dark Gray */
 
-    --card: 0 0% 100%;
+    --card: 210 17% 98%; /* #F8F9FA */
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 210 17% 98%; /* #F8F9FA */
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 122 33% 85%; /* Gentle Green #C8E6C9 */
+    --primary-foreground: 122 30% 30%; /* Dark Green for contrast */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 17% 93%; /* Light Gray #E9ECEF */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* Darker text */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 17% 93%; /* Light Gray #E9ECEF */
+    --muted-foreground: 215.4 16.3% 46.9%; /* Mid Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 44 100% 75%; /* Muted Yellow #FFD180 */
+    --accent-foreground: 44 40% 25%; /* Dark Brown/Yellow for contrast */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 17% 93%; /* Light Gray #E9ECEF */
+    --input: 210 17% 93%; /* Light Gray #E9ECEF */
+    --ring: 122 33% 85%; /* Primary Green for focus */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* 8px */
 
-    --sidebar-background: 0 0% 98%;
+    /* Fonts */
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-display: "Poppins", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Light Theme */
+    --sidebar-background: 210 20% 96%;
+    --sidebar-foreground: 222.2 84% 4.9%;
+    --sidebar-primary: 122 33% 85%;
+    --sidebar-primary-foreground: 122 30% 30%;
+    --sidebar-accent: 44 100% 75%;
+    --sidebar-accent-foreground: 44 40% 25%;
+    --sidebar-border: 210 17% 90%;
+    --sidebar-ring: 122 33% 85%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 29% 24%; /* Dark Gray/Blue #2C3E50 */
+    --foreground: 210 20% 90%; /* Light Gray */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 29% 24%;
+    --card-foreground: 210 20% 90%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 29% 24%;
+    --popover-foreground: 210 20% 90%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 122 40% 45%; /* Deeper Green */
+    --primary-foreground: 122 30% 90%; /* Light Green/White */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25% 30%; /* Darker Gray */
+    --secondary-foreground: 210 20% 85%; /* Lighter Gray */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 210 25% 30%;
+    --muted-foreground: 210 20% 65%; /* Mid-Light Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 44 50% 40%; /* Muted, Darker Yellow/Brownish */
+    --accent-foreground: 44 100% 90%; /* Light Yellow/White */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 20% 35%; /* Darker Gray, subtle */
+    --input: 210 20% 35%;
+    --ring: 122 40% 45%; /* Dark Primary Green for focus */
+
+    /* Sidebar Dark Theme */
+    --sidebar-background: 210 30% 20%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 122 40% 45%;
+    --sidebar-primary-foreground: 122 30% 90%;
+    --sidebar-accent: 44 50% 40%;
+    --sidebar-accent-foreground: 44 100% 90%;
+    --sidebar-border: 210 25% 28%;
+    --sidebar-ring: 122 40% 45%;
   }
 }
 
@@ -97,5 +97,11 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  /* Example for display font usage - you might apply this to specific elements */
+  .font-display-text {
+    font-family: var(--font-display);
   }
 }
